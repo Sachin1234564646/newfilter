@@ -23,7 +23,7 @@ join_db = JoinReqs
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     try:
-        await message.react(emoji=random.choice(REACTIONS), big=False)
+        await message.react(emoji=random.choice(REACTIONS), big=True)
     except:
         pass
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -53,7 +53,8 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
-            ],
+            ],[
+                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
