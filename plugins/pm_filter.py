@@ -2420,8 +2420,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}")
             ]
         )
         btn.insert(0, [
