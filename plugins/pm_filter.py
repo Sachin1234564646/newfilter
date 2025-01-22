@@ -2406,9 +2406,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             for file in files
         ]
         btn.insert(0, 
-            [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}")
-                ]
+            []
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
