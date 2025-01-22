@@ -1991,7 +1991,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         btn = [[
             InlineKeyboardButton("👇Select Your Language 👇", callback_data="laninfo")
         ],[
-            InlineKeyboardButton("Tamil", callback_data="tamil_info"),
             InlineKeyboardButton("English", callback_data="english_info"),
             InlineKeyboardButton("Hindi", callback_data="hindi_info")
         ],[
